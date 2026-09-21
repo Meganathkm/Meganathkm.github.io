@@ -1,235 +1,1073 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Megnath K M | Portfolio</title>
-    <!-- Google Fonts & FontAwesome Icons -->
-    <link href="https://googleapis.com" rel="stylesheet">
-    <link rel="stylesheet" href="https://cloudflare.com">
-    
-    <style>
-        :root {
-            --bg-primary: #0f172a;
-            --bg-secondary: #1e293b;
-            --accent-color: #38bdf8;
-            --text-primary: #f8fafc;
-            --text-secondary: #94a3b8;
-            --border-color: #334155;
-        }
 
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            scroll-behavior: smooth;
-        }
+    <title>MEGNATH K M | Portfolio</title>
 
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: var(--bg-primary);
-            color: var(--text-primary);
-            line-height: 1.6;
-            padding-top: 60px; /* Prevents navigation overlap */
-        }
+    <meta name="description"
+        content="MEGNATH K M - MCA Student Portfolio">
 
-        /* Responsive Navigation Bar */
-        nav {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background-color: rgba(15, 23, 42, 0.95);
-            backdrop-filter: blur(10px);
-            border-bottom: 1px solid var(--border-color);
-            z-index: 1000;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1rem 5%;
-        }
+    <link rel="stylesheet" href="style.css">
 
-        .logo {
-            font-size: 1.2rem;
-            font-weight: 700;
-            letter-spacing: 1px;
-        }
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-        .logo span {
-            color: var(--accent-color);
-        }
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
 
-        .nav-github-btn {
-            color: var(--text-primary);
-            font-size: 1.4rem;
-            transition: color 0.3s;
-        }
-
-        .nav-github-btn:hover {
-            color: var(--accent-color);
-        }
-
-        /* Centered Mobile Layout Section */
-        section {
-            padding: 3rem 8%;
-            min-height: calc(100vh - 60px);
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .hero-content {
-            width: 100%;
-            max-width: 600px;
-            text-align: center;
-        }
-
-        .hero-content h1 {
-            font-size: 2.5rem;
-            line-height: 1.2;
-            margin-bottom: 0.5rem;
-        }
-
-        .hero-content h2 {
-            font-size: 1.3rem;
-            color: var(--accent-color);
-            margin-bottom: 1.5rem;
-            font-weight: 500;
-        }
-
-        .hero-content p {
-            color: var(--text-secondary);
-            font-size: 1rem;
-            margin-bottom: 2rem;
-            text-align: justify;
-        }
-
-        /* Clean Contact Grid */
-        .contact-info-list {
-            margin-bottom: 2.5rem;
-            list-style: none;
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-            align-items: center;
-        }
-
-        .contact-info-list li {
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-            color: var(--text-secondary);
-            font-size: 0.95rem;
-        }
-
-        .contact-info-list i {
-            color: var(--accent-color);
-            font-size: 1.1rem;
-            width: 20px;
-            text-align: center;
-        }
-
-        .contact-info-list a {
-            color: var(--text-secondary);
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-
-        .contact-info-list a:hover {
-            color: var(--accent-color);
-        }
-
-        /* Button Cluster */
-        .cta-buttons {
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-            width: 100%;
-        }
-
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            gap: 0.5rem;
-            padding: 0.8rem 1.8rem;
-            border-radius: 6px;
-            font-weight: 600;
-            text-decoration: none;
-            font-size: 0.95rem;
-            transition: transform 0.2s, background-color 0.2s;
-            cursor: pointer;
-            width: 100%;
-        }
-
-        .btn-primary {
-            background-color: var(--accent-color);
-            color: var(--bg-primary);
-            border: none;
-        }
-
-        .btn-secondary {
-            border: 1px solid var(--border-color);
-            color: var(--text-primary);
-            background-color: transparent;
-        }
-
-        /* Desktop Layout Override */
-        @media(min-width: 768px) {
-            .hero-content { text-align: left; }
-            .hero-content p { text-align: left; }
-            .contact-info-list { align-items: flex-start; }
-            .cta-buttons { flex-direction: row; }
-            .btn { width: auto; }
-            section { align-items: flex-start; padding: 6rem 10%; }
-            .hero-content h1 { font-size: 3.5rem; }
-        }
-    </style>
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
+
 <body>
 
-    <nav>
-        <div class="logo">MEGNATH<span>KM</span></div>
-        <a href="https://github.com" target="_blank" class="nav-github-btn" title="GitHub Profile">
-            <i class="fab fa-github"></i>
-        </a>
-    </nav>
+    <!-- ================= NAVBAR ================= -->
 
-    <main>
-        <section id="hero">
+    <header class="navbar">
+
+        <div class="nav-container">
+
+            <a href="#home" class="logo">
+                M<span>K</span>
+            </a>
+
+            <nav id="navMenu">
+
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#education">Education</a>
+                <a href="#experience">Experience</a>
+                <a href="#achievements">Achievements</a>
+                <a href="#contact">Contact</a>
+
+            </nav>
+
+            <button class="menu-btn" id="menuBtn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= HOME ================= -->
+
+    <section id="home" class="hero">
+
+        <div class="hero-container">
+
             <div class="hero-content">
-                <h1>Megnath K M</h1>
-                <h2>Artificial Intelligence & Robotics Professional</h2>
-                <p>Motivated and detail-oriented MCA student with a strong foundation in computer science and programming. Passionate about developing innovative solutions and eager to apply technical skills in a challenging environment. Quick learner with strong problem-solving abilities and a keen interest in software development and data-driven applications.</p>
-                
-                <ul class="contact-info-list">
-                    <li><i class="fas fa-phone"></i> +91 9659425633</li>
-                    <li><i class="fas fa-envelope"></i> <a href="mailto:megnathmoorthy@gmail.com">megnathmoorthy@gmail.com</a></li>
-                    <li><i class="fab fa-linkedin"></i> <a href="https://linkedin.com" target="_blank">://linkedin.com</a></li>
-                    <li><i class="fab fa-github"></i> <a href="https://github.com" target="_blank">://github.com</a></li>
-                </ul>
 
-                <div class="cta-buttons">
-                    <a href="mailto:megnathmoorthy@gmail.com" class="btn btn-primary"><i class="far fa-envelope"></i> Say Hello</a>
-                    <a href="#" id="download-resume-btn" class="btn btn-secondary"><i class="fas fa-download"></i> Download Resume</a>
+                <p class="small-heading">
+                    MCA STUDENT | COMPUTER SCIENCE
+                </p>
+
+                <p class="hello">
+                    Hello, I'm
+                </p>
+
+                <h1>
+                    Megnath <span>K M</span>
+                </h1>
+
+                <h2>
+                    MCA Student & Aspiring Technology Professional
+                </h2>
+
+                <p class="hero-description">
+                    Motivated and detail-oriented MCA student with a strong
+                    foundation in computer science and programming. Passionate
+                    about developing innovative solutions and applying technical
+                    skills to real-world challenges.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#contact" class="btn primary-btn">
+                        Let's Connect
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                    <a href="#projects" class="btn secondary-btn">
+                        View My Projects
+                    </a>
+
+                </div>
+
+                <div class="hero-stats">
+
+                    <div class="stat">
+                        <strong>MCA</strong>
+                        <span>2025 - 2027</span>
+                    </div>
+
+                    <div class="stat">
+                        <strong>7.3</strong>
+                        <span>CGPA</span>
+                    </div>
+
+                    <div class="stat">
+                        <strong>2+</strong>
+                        <span>Projects</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="hero-image">
+
+                <div class="profile-circle">
+
+                    <div class="profile-placeholder">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+
+                </div>
+
+                <div class="floating-card card-one">
+                    <i class="fa-brands fa-python"></i>
+                    Python
+                </div>
+
+                <div class="floating-card card-two">
+                    <i class="fa-solid fa-database"></i>
+                    MySQL
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= ABOUT ================= -->
+
+    <section id="about" class="section">
+
+        <div class="section-heading">
+
+            <p>ABOUT ME</p>
+
+            <h2>
+                Motivated to learn. Ready to grow.
+            </h2>
+
+            <div class="heading-line"></div>
+
+        </div>
+
+
+        <div class="about-grid">
+
+            <div class="about-text">
+
+                <p>
+                    Motivated and detail-oriented MCA student with a strong
+                    foundation in computer science and programming.
+                </p>
+
+                <p>
+                    Passionate about developing innovative solutions and eager
+                    to apply technical skills in a challenging environment.
+                </p>
+
+                <p>
+                    Quick learner with strong problem-solving abilities and
+                    a keen interest in software development and data-driven
+                    applications.
+                </p>
+
+            </div>
+
+
+            <div class="about-cards">
+
+                <div class="about-card">
+
+                    <div class="icon">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+
+                    <h3>
+                        Programming
+                    </h3>
+
+                    <p>
+                        Python programming and web development fundamentals.
+                    </p>
+
+                </div>
+
+
+                <div class="about-card">
+
+                    <div class="icon">
+                        <i class="fa-solid fa-database"></i>
+                    </div>
+
+                    <h3>
+                        Database
+                    </h3>
+
+                    <p>
+                        SQL and MySQL database handling and data management.
+                    </p>
+
+                </div>
+
+
+                <div class="about-card">
+
+                    <div class="icon">
+                        <i class="fa-solid fa-chart-column"></i>
+                    </div>
+
+                    <h3>
+                        Data Driven
+                    </h3>
+
+                    <p>
+                        Interested in data science, visualization and analytics.
+                    </p>
+
+                </div>
+
+
+                <div class="about-card">
+
+                    <div class="icon">
+                        <i class="fa-solid fa-lightbulb"></i>
+                    </div>
+
+                    <h3>
+                        Creative Thinking
+                    </h3>
+
+                    <p>
+                        Strong interest in developing innovative solutions.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SKILLS ================= -->
+
+    <section id="skills" class="section dark-section">
+
+        <div class="section-heading">
+
+            <p>WHAT I WORK WITH</p>
+
+            <h2>
+                Skills & Technologies
+            </h2>
+
+            <div class="heading-line"></div>
+
+        </div>
+
+
+        <div class="skills-grid">
+
+            <div class="skill-card">
+
+                <div class="skill-icon">
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+
+                <div>
+                    <h3>Web Development</h3>
+                    <p>Web Technologies</p>
+                </div>
+
+            </div>
+
+
+            <div class="skill-card">
+
+                <div class="skill-icon">
+                    <i class="fa-brands fa-python"></i>
+                </div>
+
+                <div>
+                    <h3>Python</h3>
+                    <p>Programming</p>
+                </div>
+
+            </div>
+
+
+            <div class="skill-card">
+
+                <div class="skill-icon">
+                    <i class="fa-solid fa-database"></i>
+                </div>
+
+                <div>
+                    <h3>SQL / Database</h3>
+                    <p>MySQL & SQL</p>
+                </div>
+
+            </div>
+
+
+            <div class="skill-card">
+
+                <div class="skill-icon">
+                    <i class="fa-solid fa-file-excel"></i>
+                </div>
+
+                <div>
+                    <h3>MS Excel</h3>
+                    <p>Data Handling</p>
+                </div>
+
+            </div>
+
+
+            <div class="skill-card">
+
+                <div class="skill-icon">
+                    <i class="fa-solid fa-image"></i>
+                </div>
+
+                <div>
+                    <h3>Adobe Photoshop</h3>
+                    <p>Design</p>
+                </div>
+
+            </div>
+
+
+            <div class="skill-card">
+
+                <div class="skill-icon">
+                    <i class="fa-solid fa-video"></i>
+                </div>
+
+                <div>
+                    <h3>Adobe Premiere Pro</h3>
+                    <p>Video Editing</p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Soft Skills -->
+
+        <div class="sub-heading">
+            <h3>Soft Skills</h3>
+        </div>
+
+        <div class="soft-skills">
+
+            <span>
+                <i class="fa-solid fa-check"></i>
+                Team Work
+            </span>
+
+            <span>
+                <i class="fa-solid fa-check"></i>
+                Creative Thinking
+            </span>
+
+            <span>
+                <i class="fa-solid fa-check"></i>
+                Problem Solving
+            </span>
+
+            <span>
+                <i class="fa-solid fa-check"></i>
+                Quick Learning Ability
+            </span>
+
+        </div>
+
+
+        <!-- Languages -->
+
+        <div class="sub-heading">
+            <h3>Languages</h3>
+        </div>
+
+        <div class="language-grid">
+
+            <div class="language-card">
+                <i class="fa-solid fa-language"></i>
+                <div>
+                    <h3>Tamil</h3>
+                    <p>Native</p>
                 </div>
             </div>
-        </section>
-    </main>
 
-    <script>
-        document.getElementById('download-resume-btn').addEventListener('click', function(e) {
-            e.preventDefault();
-            const fileUrl = 'resume.pdf'; 
-            const fileName = 'Megnath_KM_Resume.pdf';
-            const link = document.createElement('a');
-            link.href = fileUrl;
-            link.setAttribute('download', fileName);
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
-        });
-    </script>
+            <div class="language-card">
+                <i class="fa-solid fa-language"></i>
+                <div>
+                    <h3>English</h3>
+                    <p>Intermediate</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PROJECTS ================= -->
+
+    <section id="projects" class="section">
+
+        <div class="section-heading">
+
+            <p>SELECTED WORK</p>
+
+            <h2>
+                Projects
+            </h2>
+
+            <div class="heading-line"></div>
+
+        </div>
+
+
+        <div class="projects-container">
+
+
+            <!-- PROJECT 01 -->
+
+            <article class="project-card">
+
+                <div class="project-number">
+                    01
+                </div>
+
+                <div class="project-content">
+
+                    <p class="project-category">
+                        WEB DEVELOPMENT | INDIVIDUAL PROJECT
+                    </p>
+
+                    <h3>
+                        Agenda for the Defending Case on the Web Directory
+                    </h3>
+
+                    <p>
+                        Developed a web-based legal case management system
+                        with features such as case tracking, scheduling
+                        and document management.
+                    </p>
+
+                    <p>
+                        Implemented search functionality and an intuitive
+                        user interface for efficient data handling.
+                    </p>
+
+                    <div class="tech-list">
+
+                        <span>React JS</span>
+                        <span>MySQL</span>
+                        <span>Web Development</span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- PROJECT 02 -->
+
+            <article class="project-card">
+
+                <div class="project-number">
+                    02
+                </div>
+
+                <div class="project-content">
+
+                    <p class="project-category">
+                        PYTHON | MACHINE LEARNING
+                    </p>
+
+                    <h3>
+                        Smart Heart Disease Detection System
+                    </h3>
+
+                    <p>
+                        Developed a heart disease prediction system using
+                        Python and Random Forest machine learning algorithm.
+                    </p>
+
+                    <p>
+                        Used Pandas, NumPy, Scikit-learn and Streamlit for
+                        data preprocessing, model training, system testing
+                        and prediction display.
+                    </p>
+
+                    <div class="tech-list">
+
+                        <span>Python</span>
+                        <span>Pandas</span>
+                        <span>NumPy</span>
+                        <span>Scikit-learn</span>
+                        <span>Streamlit</span>
+                        <span>Random Forest</span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= EDUCATION ================= -->
+
+    <section id="education" class="section dark-section">
+
+        <div class="section-heading">
+
+            <p>ACADEMIC JOURNEY</p>
+
+            <h2>
+                Education
+            </h2>
+
+            <div class="heading-line"></div>
+
+        </div>
+
+
+        <div class="timeline">
+
+
+            <!-- MCA -->
+
+            <div class="timeline-item">
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-content">
+
+                    <span class="timeline-date">
+                        2025 - 2027
+                    </span>
+
+                    <h3>
+                        Master of Computer Applications (MCA)
+                    </h3>
+
+                    <p>
+                        Dr GR Damodaran College of Science (Autonomous)
+                    </p>
+
+                    <p>
+                        Bharathiar University, Coimbatore
+                    </p>
+
+                    <strong>
+                        Currently Pursuing
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <!-- DEGREE -->
+
+            <div class="timeline-item">
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-content">
+
+                    <span class="timeline-date">
+                        2022 - 2025
+                    </span>
+
+                    <h3>
+                        B.Sc Computer Science
+                    </h3>
+
+                    <p>
+                        Hindusthan College of Arts & Science,
+                        Coimbatore
+                    </p>
+
+                    <strong>
+                        CGPA: 7.3
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <!-- HSC -->
+
+            <div class="timeline-item">
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-content">
+
+                    <span class="timeline-date">
+                        2022
+                    </span>
+
+                    <h3>
+                        Higher Secondary Education
+                    </h3>
+
+                    <p>
+                        Bharathi Matric Hr Sec School, Erode
+                    </p>
+
+                    <strong>
+                        67%
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= EXPERIENCE ================= -->
+
+    <section id="experience" class="section">
+
+        <div class="section-heading">
+
+            <p>INTERNSHIP & WORKSHOPS</p>
+
+            <h2>
+                Experience
+            </h2>
+
+            <div class="heading-line"></div>
+
+        </div>
+
+
+        <div class="experience-container">
+
+
+            <!-- SIRENA -->
+
+            <div class="experience-card">
+
+                <div class="experience-icon">
+                    <i class="fa-solid fa-robot"></i>
+                </div>
+
+                <div class="experience-content">
+
+                    <span class="experience-label">
+                        INTERNSHIP
+                    </span>
+
+                    <h3>
+                        Artificial Intelligence & Robotics Intern
+                    </h3>
+
+                    <h4>
+                        Sirena Technologies
+                    </h4>
+
+                    <p>
+                        Gained hands-on experience in Robotics Technology
+                        and practical knowledge of the functionalities
+                        and applications of advanced robotic systems
+                        developed by the company.
+                    </p>
+
+                    <div class="experience-tags">
+
+                        <span>Artificial Intelligence</span>
+                        <span>Robotics</span>
+                        <span>Practical Learning</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ADOBE -->
+
+            <div class="experience-card">
+
+                <div class="experience-icon">
+                    <i class="fa-solid fa-video"></i>
+                </div>
+
+                <div class="experience-content">
+
+                    <span class="experience-label">
+                        INSTITUTIONAL TRAINING PROGRAMME
+                    </span>
+
+                    <h3>
+                        Adobe Premiere Pro
+                    </h3>
+
+                    <h4>
+                        MAAC | Coimbatore
+                    </h4>
+
+                    <p>
+                        Gained basic knowledge of Adobe Premiere Pro
+                        for video editing, including basic photo and
+                        video manipulation techniques.
+                    </p>
+
+                    <p>
+                        Developed an understanding of fundamental editing
+                        principles and workflow management through
+                        Adobe Premiere Pro training.
+                    </p>
+
+                    <div class="experience-tags">
+
+                        <span>Adobe Premiere Pro</span>
+                        <span>Video Editing</span>
+                        <span>Photo Editing</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= ACHIEVEMENTS ================= -->
+
+    <section id="achievements" class="section dark-section">
+
+        <div class="section-heading">
+
+            <p>LEARNING & ACHIEVEMENTS</p>
+
+            <h2>
+                Certifications & Achievements
+            </h2>
+
+            <div class="heading-line"></div>
+
+        </div>
+
+
+        <div class="certification-grid">
+
+
+            <!-- IBM -->
+
+            <div class="cert-card">
+
+                <div class="cert-icon">
+                    <i class="fa-solid fa-certificate"></i>
+                </div>
+
+                <span class="cert-provider">
+                    IBM COURSE CERTIFICATIONS
+                </span>
+
+                <h3>
+                    Data Visualisation
+                </h3>
+
+                <p>
+                    Certification in Data Visualisation.
+                </p>
+
+            </div>
+
+
+            <div class="cert-card">
+
+                <div class="cert-icon">
+                    <i class="fa-solid fa-lightbulb"></i>
+                </div>
+
+                <span class="cert-provider">
+                    IBM COURSE CERTIFICATIONS
+                </span>
+
+                <h3>
+                    Design Thinking
+                </h3>
+
+                <p>
+                    Certification in Design Thinking.
+                </p>
+
+            </div>
+
+
+            <!-- ORACLE -->
+
+            <div class="cert-card">
+
+                <div class="cert-icon">
+                    <i class="fa-solid fa-database"></i>
+                </div>
+
+                <span class="cert-provider">
+                    ORACLE ACADEMY
+                </span>
+
+                <h3>
+                    SQL Workshop
+                </h3>
+
+                <p>
+                    Completed SQL Workshop certification.
+                </p>
+
+            </div>
+
+
+            <!-- CISCO -->
+
+            <div class="cert-card">
+
+                <div class="cert-icon">
+                    <i class="fa-solid fa-network-wired"></i>
+                </div>
+
+                <span class="cert-provider">
+                    CISCO NETWORKING ACADEMY
+                </span>
+
+                <h3>
+                    Introduction to Data Science
+                </h3>
+
+                <p>
+                    Completed in February 2026.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= STRENGTHS ================= -->
+
+    <section class="section strengths-section">
+
+        <div class="section-heading">
+
+            <p>PERSONAL STRENGTHS</p>
+
+            <h2>
+                What I Bring
+            </h2>
+
+            <div class="heading-line"></div>
+
+        </div>
+
+
+        <div class="strengths">
+
+            <span>
+                <i class="fa-solid fa-check"></i>
+                Team Work
+            </span>
+
+            <span>
+                <i class="fa-solid fa-check"></i>
+                Creative Thinking
+            </span>
+
+            <span>
+                <i class="fa-solid fa-check"></i>
+                Problem Solving
+            </span>
+
+            <span>
+                <i class="fa-solid fa-check"></i>
+                Quick Learning
+            </span>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONTACT ================= -->
+
+    <section id="contact" class="contact-section">
+
+        <div class="contact-container">
+
+            <div class="contact-heading">
+
+                <p>
+                    GET IN TOUCH
+                </p>
+
+                <h2>
+                    Let's connect and
+                    <span>create something.</span>
+                </h2>
+
+                <p>
+                    Feel free to reach out to me for professional
+                    opportunities, collaborations or discussions
+                    related to technology and projects.
+                </p>
+
+            </div>
+
+
+            <div class="contact-details">
+
+
+                <!-- EMAIL -->
+
+                <a href="mailto:Meganathmoorthy@gmail.com"
+                    class="contact-item">
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                    <div>
+
+                        <small>
+                            Email
+                        </small>
+
+                        <span>
+                            Meganathmoorthy@gmail.com
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+                <!-- PHONE -->
+
+                <a href="tel:+919659425633"
+                    class="contact-item">
+
+                    <i class="fa-solid fa-phone"></i>
+
+                    <div>
+
+                        <small>
+                            Phone
+                        </small>
+
+                        <span>
+                            +91 9659425633
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+                <!-- LINKEDIN -->
+
+                <a href="https://www.linkedin.com/in/meganath-km-850350315/"
+                    target="_blank"
+                    class="contact-item">
+
+                    <i class="fa-brands fa-linkedin"></i>
+
+                    <div>
+
+                        <small>
+                            LinkedIn
+                        </small>
+
+                        <span>
+                            View LinkedIn Profile
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <div class="footer-logo">
+                M<span>K</span>
+            </div>
+
+            <p>
+                Designed & built with HTML, CSS & JavaScript.
+            </p>
+
+            <p class="copyright">
+                © <span id="year"></span>
+                Megnath K M. All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- BACK TO TOP -->
+
+    <button id="backToTop" class="back-to-top">
+
+        <i class="fa-solid fa-arrow-up"></i>
+
+    </button>
+
+
+    <script src="script.js"></script>
+
 </body>
+
 </html>
